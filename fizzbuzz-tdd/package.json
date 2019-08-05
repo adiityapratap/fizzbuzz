@@ -1,0 +1,17 @@
+{
+  "name": "tdd-fizzbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "stepOne": "node ./src/step1.js",
+    "stepTwo": "node ./src/step2.js",
+    "stepThree": "node ./src/step3.js",
+    "test": "mocha --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
