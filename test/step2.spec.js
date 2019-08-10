@@ -44,4 +44,25 @@ describe('Step 2', function() {
       ]
       );
     });
+    it('should return the appropriate results for single number', function() {
+      var output = step2.step2(3);
+      assert.equal(
+        output,
+        "fizz"
+      );
+    });
+    it('should return the appropriate results for single number', function() {
+      var output = step2.step2(5);
+      assert.equal(
+        output,
+        "buzz"
+      );
+    });
+    it('should return the appropriate results for single number', function() {
+      var output = step2.step2(15);
+      assert.equal(
+        output,
+        "fizzbuzz"
+      );
+    });
 });

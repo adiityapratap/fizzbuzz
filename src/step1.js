@@ -1,6 +1,11 @@
 var { getRange, checkFizz, checkBuzz, checkFizzBuzz } = require('./util');
 
 const step1 = function (low, high) {
+
+    if(arguments.length == 1) {
+        return checkFizzBuzz(arguments[0]);
+    }
+
     let numbers = [];
     if(typeof low == 'undefined' || typeof high == 'undefined') {
         return 'Please enter a correct range'
@@ -19,13 +24,7 @@ const step1 = function (low, high) {
     let fizzbuzz = [];
     numbers.forEach(num => {
         if(checkFizzBuzz(num)) {
-            fizzbuzz.push('fizzbuzz');
-        }
-        else if(checkBuzz(num)) {
-            fizzbuzz.push('buzz');
-        }
-        else if(checkFizz(num)) {
-            fizzbuzz.push('fizz');
+            fizzbuzz.push(checkFizzBuzz(num));
         }
         else {
             fizzbuzz.push(num.toString());

@@ -29,5 +29,25 @@ describe('Step 3', function() {
       }
     );
   });
-  
+  it('should return the appropriate results for single number', function() {
+    var output = step3.step3(3);
+    assert.equal(
+      output,
+      "fizz"
+    );
+  });
+  it('should return the appropriate results for single number', function() {
+    var output = step3.step3(5);
+    assert.equal(
+      output,
+      "buzz"
+    );
+  });
+  it('should return the appropriate results for single number', function() {
+    var output = step3.step3(15);
+    assert.equal(
+      output,
+      "fizzbuzz"
+    );
+  });
 });

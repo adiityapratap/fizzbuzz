@@ -44,4 +44,26 @@ describe('Step 1', function() {
       ]
       );
     });
+
+    it('should return the appropriate results for single number 3', function() {
+      var output = step1.step1(3);
+      assert.equal(
+        output,
+        "fizz"
+      );
+    });
+    it('should return the appropriate results for single number 5', function() {
+      var output = step1.step1(5);
+      assert.equal(
+        output,
+        "buzz"
+      );
+    });
+    it('should return the appropriate results for single number 15', function() {
+      var output = step1.step1(15);
+      assert.equal(
+        output,
+        "fizzbuzz"
+      );
+    });
 });

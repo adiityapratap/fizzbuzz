@@ -12,5 +12,14 @@ exports.checkBuzz = function (num) {
 }
 
 exports.checkFizzBuzz = function (num) {
-    return num % 15 == 0 ? 'fizzbuzz' : '';
+    if(num % 15 == 0) {
+        return 'fizzbuzz';
+    }
+    if(num % 5 == 0) {
+        return 'buzz';
+    }
+    if(num % 3 == 0) {
+        return 'fizz';
+    }
+    return '';
 }
